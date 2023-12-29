@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3306623217728328914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3306623217728328925}
+  - component: {fileID: 1702120247}
+  - component: {fileID: 6685160716497035550}
+  m_Layer: 0
+  m_Name: Wave17
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3306623217728328925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306623217728328914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1702120247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306623217728328914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 883408ac13b5b4344b259beb38e9880f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefabs:
+  - {fileID: 3797353256652803353, guid: 2f986123de9bab94d83facf842fe037d, type: 3}
+  - {fileID: 595078566298541903, guid: 1aa839b60d675a743a7833c53d5d53d0, type: 3}
+  - {fileID: 407216984633659201, guid: 039410cb5bc322d4d972ca212879da84, type: 3}
+  - {fileID: 4095439229492061232, guid: aecc79e2fcf36924cb517aa261e60922, type: 3}
+  - {fileID: 5173788307540601794, guid: 5c17b65a10fbb38478e56705e1a09719, type: 3}
+  - {fileID: 777411748601554076, guid: 9f3884b394069784b947d24f9ffd0179, type: 3}
+  - {fileID: 2666800497421761868, guid: 573b66d906be2ea44b75439b89a9a76e, type: 3}
+  - {fileID: 382321509568621527, guid: a73cee944645a1c4c8065cd60a4b9884, type: 3}
+  spawnInterval: 0.5
+  minpPosX: -4
+  maxPosX: 4
+  posY: 8.5
+  countEnemy: 15
+--- !u!114 &6685160716497035550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306623217728328914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5be978f7f4c4c408d37edf42ba159a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDrag: {fileID: 0}
+  pointPos: []
+  boxFormation: {fileID: 0}
+  radialFormation: {fileID: 0}
+  asteroidSpawner: {fileID: 1702120247}
+  miniBoss: {fileID: 0}
