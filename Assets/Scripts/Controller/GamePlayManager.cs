@@ -8,6 +8,13 @@ using UnityEngine.Events;
 
 public class GamePlayManager : MonoBehaviour
 {
+    [SerializeField] Air air;
+    public Air Air => air;
+    int count;
+    public int increaseCount()
+    {
+        return count++;
+    }
     public void ChangeStateEndGame(LevelResult levelResult)
     {
         switch (levelResult)
@@ -25,6 +32,8 @@ public class GamePlayManager : MonoBehaviour
 
     private void ActionWin()
     {
+        int index = PlayerDataManager.Instance.GetIndexWave() + 1;
+        PlayerDataManager.Instance.SetIndexWave(index);
         GameManager.Instance.UiController.OpenUiWin();
         GameManager.Instance.IncreaseLevel(GameManager.Instance.levelPlaying);
         GameManager.Instance.isStartGame = true;
@@ -33,10 +42,15 @@ public class GamePlayManager : MonoBehaviour
 
     private void ActionLose()
     {
+        GameManager.Instance.UiController.OpenUiLose();
         GameManager.Instance.isStartGame = true;
+
 
     }
 
-
+    private void OnApplicationQuit()
+    {
+        PlayerDataManager.Instance.SetIndexWave(0);
+    }
 }
 

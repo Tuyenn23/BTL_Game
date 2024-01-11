@@ -30,12 +30,13 @@ namespace Game_Fly
         public AddressablesUtils addressableGame;
         public bool isStartGame = false;
 
+       
         private void Awake()
         {
             Instance = this;
             levelPlaying = DataLevel.GetLevel();
             Profile = new Profile();
-
+            AudioController.Instance.PlayBackgroundMusic();
             DOTween.Init().SetCapacity(200, 125);
         }
 
@@ -52,6 +53,7 @@ namespace Game_Fly
             {
                 DataLevel.SetLevel(level);
             }
+            
         }
 
         public void SkipLevel()
@@ -65,13 +67,7 @@ namespace Game_Fly
             DOTween.KillAll();
         }
 
-        public void Pause()
-        {
-        }
-
-        public void Resume()
-        {
-        }
+        
     }
 }
 

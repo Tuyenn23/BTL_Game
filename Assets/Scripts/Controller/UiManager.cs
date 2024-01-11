@@ -6,6 +6,7 @@ public class UiManager : MonoBehaviour
 {
     public UiMainLobby UiMainLobby;
     public UIWin UiWin;
+    public UiLose UiLose;
     public UIGamePlay UiGamePlay;
 
     public void Init()
@@ -25,5 +26,10 @@ public class UiManager : MonoBehaviour
     public void OpenUiWin()
     {
         UiWin.Show(true);
+    }
+
+    public void OpenUiLose()
+    {
+        UiLose.Show(true);
     }
 }

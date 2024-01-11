@@ -63,6 +63,16 @@ public class PlayerDataManager : MonoBehaviour
         PlayerPrefs.SetInt(Helper.GOLD, _count);
     }
 
+    public int GetIndexWave()
+    {
+        return PlayerPrefs.GetInt("IndexWave", 0);
+    }
+
+    public void SetIndexWave(int _count)
+    {
+        PlayerPrefs.SetInt("IndexWave", _count);
+    }
+
     public int GetKey()
     {
         return PlayerPrefs.GetInt(Helper.KEY, 0);
