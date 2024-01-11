@@ -203,3 +203,4 @@ MonoBehaviour:
   pos2: {fileID: 0}
   timeDelay: 3
   enemyBossType: 1
+  countEnemy: 1
