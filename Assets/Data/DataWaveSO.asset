@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0372b155f9b389046b114c65f01da444, type: 3}
+  m_Name: DataWaveSO
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 7375070164354200751, guid: 4fcff42e9b927094297a041ef833092e, type: 3}
+    - {fileID: 3686845815493582286, guid: f8511fd31e578e94d801a4e6d900d0af, type: 3}
+    - {fileID: 1789745037790513737, guid: 357fdcbbf1178ab49a943531069ddd87, type: 3}
+    - {fileID: 8013038936334456276, guid: 2febd03923e6353419a6daad7c0652c6, type: 3}
+    - {fileID: 3306623217728328914, guid: a36874aef4895ce4c90c6e62b224c428, type: 3}
+    - {fileID: 4747698599791839301, guid: abf5ddb134001544db6c5ca8d67e487c, type: 3}
+    - {fileID: 6272627613056028443, guid: 22d7df322db708f46a16d85390e9ba58, type: 3}
+    - {fileID: 3277238812740785833, guid: b4787e992a6fd3d479a6a8fcf4e1864f, type: 3}
+    - {fileID: 3817461360990574882, guid: 679c7354cb1233f44900a35c9b3fb751, type: 3}
+    - {fileID: 680752703195439230, guid: deb64b75c564d054bae65860bb2b1dea, type: 3}
+    - {fileID: 3306623217728328914, guid: ba0efd4a361f20e40a6218ddee063610, type: 3}
+    - {fileID: 4747698599791839301, guid: b068c14378f741946b4bd009909919ea, type: 3}
+    - {fileID: 6114015516808318446, guid: bc2f469693e6e9b4f8f51a11d2d3597f, type: 3}
+    - {fileID: 4552006597300505928, guid: 45fe81b29c579d34a86a9d34e3a95148, type: 3}
+    - {fileID: 6710597118423379495, guid: ca298e76180f5e447bfdad6ea68078ab, type: 3}
+    - {fileID: 7948465426734089484, guid: 99cc97ce6b279784aa97cb2752dbcb90, type: 3}
+    - {fileID: 3306623217728328914, guid: 89286602da8c48e4f9093cf08e455be3, type: 3}
+    - {fileID: 7771497997837805822, guid: 7bccc7bc53d62a849a96eeb82b420777, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: dataWaves
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.Int32, mscorlib],[WaveData,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 2|WaveData, Assembly-CSharp
+    - Name: wave
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 4|WaveData, Assembly-CSharp
+    - Name: wave
+      Entry: 7
+      Data: 5|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 6|WaveData, Assembly-CSharp
+    - Name: wave
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[UnityEngine.GameObject, UnityEngine.CoreModule]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
