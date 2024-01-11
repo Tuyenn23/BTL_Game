@@ -12,6 +12,7 @@ public class LoadLevelManager : MonoBehaviour
 
     public void LoadLevelStartGame()
     {
-        GameManager.Instance.addressableGame.SpawnObject(GameManager.Instance.levelPlaying);
+        /*GameManager.Instance.addressableGame*/
+        AddressablesUtils.Instance.SpawnObject(GameManager.Instance.levelPlaying, PlayerDataManager.Instance.GetIndexWave());
     }
 }

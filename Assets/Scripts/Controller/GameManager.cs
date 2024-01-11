@@ -40,6 +40,11 @@ namespace Game_Fly
             DOTween.Init().SetCapacity(200, 125);
         }
 
+        public void OnEnable()
+        {
+            levelPlaying = PlayerDataManager.Instance.GetChooseIndexLevel();
+        }
+
         public void IncreaseLevel(int level)
         {
             if (DataLevel.GetLevel() == totalLevel)

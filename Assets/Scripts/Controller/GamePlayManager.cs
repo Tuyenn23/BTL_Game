@@ -28,12 +28,21 @@ public class GamePlayManager : MonoBehaviour
             default:
                 break;
         }
+        AddressablesUtils.Instance.listWaves.Clear();
+    }
+
+    public void ChangeStateEndWave()
+    {
+        int index = PlayerDataManager.Instance.GetIndexWave() + 1;
+        PlayerDataManager.Instance.SetIndexWave(index);
+        GameManager.Instance.UiController.OpenUiWin();
+        GameManager.Instance.isStartGame = true;
     }
 
     private void ActionWin()
     {
-        int index = PlayerDataManager.Instance.GetIndexWave() + 1;
-        PlayerDataManager.Instance.SetIndexWave(index);
+        //int index = PlayerDataManager.Instance.GetIndexWave() + 1;
+        //PlayerDataManager.Instance.SetIndexWave(index);
         GameManager.Instance.UiController.OpenUiWin();
         GameManager.Instance.IncreaseLevel(GameManager.Instance.levelPlaying);
         GameManager.Instance.isStartGame = true;

@@ -15,6 +15,7 @@ public class PlayerDataManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        DontDestroyOnLoad(this);
     }
 
     public int GetMaxLevelReached()
@@ -61,6 +62,16 @@ public class PlayerDataManager : MonoBehaviour
     public void SetGold(int _count)
     {
         PlayerPrefs.SetInt(Helper.GOLD, _count);
+    }
+
+    public int GetChooseIndexLevel()
+    {
+        return PlayerPrefs.GetInt("ChooseIndexLevel", 0);
+    }
+
+    public void SetChooseIndexLevel(int _count)
+    {
+        PlayerPrefs.SetInt("ChooseIndexLevel", _count);
     }
 
     public int GetIndexWave()
@@ -150,24 +161,24 @@ public class PlayerDataManager : MonoBehaviour
         PlayerPrefs.SetString("TimeLoginSpinVideo", time);
     }
 
-    public void SetSoundSetting(bool isOn)
+    public void SetSoundSetting(float isOn)
     {
-        PlayerPrefs.SetInt(Helper.SoundSetting, isOn ? 1 : 0);
+        PlayerPrefs.SetFloat(Helper.SoundSetting, isOn);
     }
 
-    public bool GetSoundSetting()
+    public float GetSoundSetting()
     {
-        return PlayerPrefs.GetInt(Helper.SoundSetting, 1) == 1;
+        return PlayerPrefs.GetFloat(Helper.SoundSetting, -1);
     }
 
-    public void SetMusicSetting(bool isOn)
+    public void SetMusicSetting(float isOn)
     {
-        PlayerPrefs.SetInt(Helper.MusicSetting, isOn ? 1 : 0);
+        PlayerPrefs.SetFloat(Helper.MusicSetting, isOn);
     }
 
-    public bool GetMusicSetting()
+    public float GetMusicSetting()
     {
-        return PlayerPrefs.GetInt(Helper.MusicSetting, 1) == 1;
+        return PlayerPrefs.GetFloat(Helper.MusicSetting, -1);
 
     }
 
