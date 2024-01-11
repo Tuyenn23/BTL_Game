@@ -18,7 +18,7 @@ public class WaveSpawn : MonoBehaviour
     public BoxFormation boxFormation;
     public RadialFormation radialFormation;
     public AsteroidSpawner asteroidSpawner;
-    public SpawnMiniBoss miniBoss;
+    public SpawnBoss miniBoss;
     public UnityAction OnEnemyDead;
     private int countInvoke;
 
