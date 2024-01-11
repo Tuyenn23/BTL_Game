@@ -163,7 +163,7 @@ MonoBehaviour:
   isDead: 0
   hp: 1
   maxHp: 100
-  bloodObj: {fileID: 1429954232896169633, guid: 85bd61d58437ab940bb8540e427981f0, type: 3}
+  bloodObj: {fileID: 2708598583397607911, guid: a7c083b1847d15246929eaa224aba021, type: 3}
   enemyType: 1
   health: {fileID: 404545340827082725}
   gradient:
