@@ -22,11 +22,13 @@ public abstract class DamageReceiver : MonoBehaviour
     protected virtual void OnEnable()
     {
         this.Rebord();
+        
     }
 
     private void Start()
     {
         LoadComponents();
+
     }
     protected void LoadComponents()
     {
@@ -43,7 +45,10 @@ public abstract class DamageReceiver : MonoBehaviour
     {
         if (this.isDead) return;
         this.hp += add;
+
         if (this.hp > this.maxHp) this.hp = this.maxHp;
+        EventManager.SetData(EventConstants.UPDATE_HP_PLAYER, hp);
+        EventManager.EmitEvent(EventConstants.UPDATE_HP_PLAYER);
     }
 
     public virtual void Deduct(float deduct)

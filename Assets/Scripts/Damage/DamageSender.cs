@@ -7,8 +7,6 @@ public class DamageSender : MonoBehaviour
     [SerializeField]
     protected float damage = 1;
     [SerializeField]
-    /*private EnemyType enemyType;
-    public HealthBarBoss healthBar;*/
     public virtual void Send(Transform obj)
     {
         DamageReceiver damageReceiver = obj.GetComponentInChildren<DamageReceiver>();
