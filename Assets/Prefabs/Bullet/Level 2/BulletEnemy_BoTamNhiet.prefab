@@ -101,6 +101,7 @@ MonoBehaviour:
   damage: 1
   speed: 3
   effect: {fileID: 100000, guid: f2dba9e16cd347f44a395b8204544ee5, type: 3}
+  effect_2: {fileID: 8771972552311404799, guid: e8a4c13e06db410458e0141de8d1544e, type: 3}
 --- !u!60 &7726462600952048060
 PolygonCollider2D:
   m_ObjectHideFlags: 0
