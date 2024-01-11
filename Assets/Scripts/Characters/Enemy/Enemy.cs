@@ -14,8 +14,9 @@ public class Enemy : BaseEnemy
 
     private float timeToShoot;
     private float nextShootTime;
-    //float _timeBtwFire;
-    /*float _timeBtwFiree = 1;*/
+
+    public GameObject[] itemPrefab;
+    public float dropProbability = 30f; // Tỉ lệ phần trăm
 
     void Start()
     {
@@ -52,6 +53,15 @@ public class Enemy : BaseEnemy
     public void EndShootingEvent()
     {
         anim.SetBool("Shooting", false);
+    }
+
+    private void OnDisable()
+    {
+        // Kiểm tra xác suất rơi vật phẩm
+        if (Random.Range(0f, 100f) <= dropProbability)
+        {
+            Instantiate(itemPrefab[Random.Range(0, itemPrefab.Length)], transform.position, Quaternion.identity);
+        }
     }
 
 
