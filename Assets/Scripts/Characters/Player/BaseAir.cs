@@ -5,6 +5,7 @@ using UnityEngine;
 public class BaseAir : MonoBehaviour
 {
     Vector2 difference = Vector2.zero;
+    
 
     private Camera mainCamera;
     private float minX, maxX, minY, maxY;
@@ -28,8 +29,8 @@ public class BaseAir : MonoBehaviour
     private void Start()
     {
         
-        mainCamera = Camera.main;
 
+        mainCamera = Camera.main;
         // Lấy kích thước của người chơi (Player)
         SpriteRenderer playerRenderer = GetComponent<SpriteRenderer>();
         playerHalfWidth = playerRenderer.bounds.size.x / 2f;
@@ -48,10 +49,10 @@ public class BaseAir : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
     }
 
-    
+
     void CalculateCameraBounds()
     {
         if (mainCamera != null)
@@ -87,9 +88,9 @@ public class BaseAir : MonoBehaviour
     }
     protected virtual void FireBullet()
     {
-        
+
     }
 
-    
+
 
 }

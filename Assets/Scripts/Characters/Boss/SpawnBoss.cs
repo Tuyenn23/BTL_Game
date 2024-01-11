@@ -18,6 +18,8 @@ public class SpawnBoss : MonoBehaviour
 
     [SerializeField]
     private EnemyBossType enemyBossType;
+
+    public int countEnemy = 0;
     private void Start()
     {
         StartCoroutine(Spawn());
@@ -37,6 +39,7 @@ public class SpawnBoss : MonoBehaviour
         else if(enemyBossType == EnemyBossType.Boss)
         {
             Instantiate(effect, transform.position, Quaternion.identity);
+            AudioController.Instance.PlaySound(AudioController.Instance.warnningBoss);
             yield return new WaitForSeconds(timeDelay);
             Instantiate(bossPrefab, pos1.position, Quaternion.identity);
         }
