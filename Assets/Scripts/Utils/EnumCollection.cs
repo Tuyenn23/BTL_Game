@@ -18,7 +18,8 @@ public enum LevelType
 public enum EnemyType
 {
     Normal = 0,
-    Boss = 1
+    Boss = 1,
+    Mini =2
 }
 
 public enum EnemyBossType

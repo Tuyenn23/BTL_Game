@@ -11,15 +11,28 @@ namespace Game_DrawCar
     public class AddressablesUtils : MonoBehaviour
     {
 
-        [SerializeField] private List<AssetReference> _particleReferences;
         private GameObject currentLevelGameObject;
 
-        public void SpawnObject(int index)
+        [SerializeField]
+        private DataWaveSO dataWaveSO;
+        [SerializeField]
+        public List<GameObject> listWaves;
+
+        private static AddressablesUtils instance;
+
+        public static AddressablesUtils Instance { get => instance; }
+
+        private void Awake()
         {
-            StartCoroutine(Spawn(index));
+            instance = this;
         }
 
-        private IEnumerator Spawn(int index)
+        public void SpawnObject(int indexLevel, int indexWave)
+        {
+            StartCoroutine(Spawn(indexLevel, indexWave));
+        }
+
+/*        private IEnumerator Spawn(int index)
         {
             AsyncOperationHandle<GameObject> request = Addressables.LoadAssetAsync<GameObject>(_particleReferences[index]);
             yield return request;
@@ -32,6 +45,23 @@ namespace Game_DrawCar
             GameObject level = Instantiate(objectLevel);
             currentLevelGameObject = level;
 
+        }*/
+
+        private IEnumerator Spawn(int indexLevel, int indexWave)
+        {
+            if(listWaves.Count == 0)
+            {
+                listWaves = dataWaveSO.GetListWaveByIdLevel(indexLevel);
+            }
+            yield return null;
+            if (currentLevelGameObject != null)
+            {
+                currentLevelGameObject.SetActive(false);
+                Destroy(currentLevelGameObject);
+            }
+            GameObject objectLevel = listWaves[indexWave];
+            GameObject level = Instantiate(objectLevel);
+            currentLevelGameObject = level;
         }
     }
 }
