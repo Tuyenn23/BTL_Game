@@ -27,6 +27,18 @@ public enum EnemyBossType
     Boss = 1
 }
 
+public enum TypeItem
+{
+    Coin = 0,
+    Key = 1,
+    Hp = 2,
+    Shield = 3,
+    Upgrade = 4,
+
+
+}
+
+
 public enum IdPack
 {
     NONE = -1,
@@ -126,12 +138,7 @@ public enum TypeGift
     PET
 }
 
-public enum TypeItem
-{
-    Coin = 0,
-    Key = 1
 
-}
 
 public enum TypeSoundIngame
 {
