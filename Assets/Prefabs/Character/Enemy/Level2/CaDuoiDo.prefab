@@ -76,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -553016245
-  m_SortingLayer: -2
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d772159c253b23643b82666b21c1c645, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -122,12 +122,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 0}
-  timeDelay: 8
   firePos: {fileID: 315468393336584903}
   bulletPrefab: {fileID: 470892945994962367, guid: c719da420db354b45894369f53c557a5, type: 3}
   holderPrefabs: {fileID: 0}
   minShootInterval: 1
   maxShootInterval: 70
+  itemPrefab:
+  - {fileID: 1566175290273796741, guid: 4effebc5f04e3a443af6d0d2f39b4f86, type: 3}
+  - {fileID: 6196395668434565636, guid: 9b7c948295f50884c86f65c7939cfdaa, type: 3}
+  - {fileID: 7207767182235160376, guid: 3c655dcd33b165747b2f2ea41ea39f06, type: 3}
+  dropProbability: 30
 --- !u!60 &4885663552939043924
 PolygonCollider2D:
   m_ObjectHideFlags: 0
