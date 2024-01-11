@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  timeDelay: 0.2
+  timeDelay: 2
   effect: {fileID: 1429954232896169633, guid: aaf29ec033ba85b49acb9127e02a6f5b, type: 3}
 --- !u!50 &954717546141739079
 Rigidbody2D:
