@@ -17,12 +17,11 @@
 - Vật phẩm: những vật phẩm hữu ích cho người chơi để nâng cấp bản thân và bắn hạ kẻ địch
 - Màn chơi: Game có 3 màn chơi chính, mỗi màn chơi chính có 5 màn chơi nhỏ và 1 màn trùm cuối sau khi đánh bại trùm cuối người chơi sẽ tiếp tục tiến tới chặng đường tiếp theo
 3. Hướng dẫn cơ bản
-1. Di chuyển
-- Sử dụng chuột để di chuyển phi cơ
+- Di chuyển:  Sử dụng chuột để di chuyển phi cơ
 
-2. Tự động bắn xả đạn liên tục 
+- Tự động bắn xả đạn liên tục 
 
-3. Nhặt vật phẩm
-- Vật phẩm đùi gà giúp tăng máu cho người chơi
-- Vật phẩm khiên giúp tạo ra một lá chắn chống đạn của kẻ thù
-- Vật phẩm nâng cấp giúp nâng số lượng đạn giúp tiêu diệt địch dễ dàng hơn
+- Nhặt vật phẩm
++ Vật phẩm đùi gà giúp tăng máu cho người chơi
++ Vật phẩm khiên giúp tạo ra một lá chắn chống đạn của kẻ thù
++ Vật phẩm nâng cấp giúp nâng số lượng đạn giúp tiêu diệt địch dễ dàng hơn
