@@ -10,6 +10,8 @@ public static class TagConst
     public static string PLAYER = "Player";
     public static string LIMIT = "Limit";
     public static string LIMIT_2 = "Limit_2";
+    public static string SHIELD = "Shield";
+
 
 
 
