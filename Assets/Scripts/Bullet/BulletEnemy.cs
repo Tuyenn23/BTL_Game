@@ -6,18 +6,25 @@ using UnityEngine;
 public class BulletEnemy : BaseBullet
 {
     [SerializeField]
-    protected GameObject effect;
+    protected GameObject effect, effect_2;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(TagConst.PLAYER))
         {
             this.Send(collision.transform);
+            AudioController.Instance.PlaySound(AudioController.Instance.playerHit);
             this.DestroyBullet();
         }
         if (collision.CompareTag(TagConst.LIMIT))
         {
-            this.Limit();
+            this.UnTouch();
+        }
+        if (collision.CompareTag(TagConst.SHIELD))
+        {
+            Instantiate(effect_2, transform.position, Quaternion.identity);
+            AudioController.Instance.PlaySound(AudioController.Instance.shieldHit);
+            this.UnTouch();
         }
     }
 
@@ -25,10 +32,10 @@ public class BulletEnemy : BaseBullet
     {
         Instantiate(effect, transform.position, Quaternion.identity);
         SimplePool.Despawn(gameObject);
-        //Destroy(gameObject);
+        
     }
 
-    protected virtual void Limit()
+    protected virtual void UnTouch()
     {
         SimplePool.Despawn(gameObject);
 
@@ -43,14 +50,5 @@ public class BulletEnemy : BaseBullet
         transform.Translate(Vector2.down * speed * Time.deltaTime);
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag(TagConst.PLAYER))
-        {
-            Debug.Log("player chet");
-            Destroy(collision.gameObject);
-            Destroy(gameObject);
-
-        }
-    }*/
+    
 }
