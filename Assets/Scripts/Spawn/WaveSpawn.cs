@@ -39,20 +39,20 @@ public class WaveSpawn : MonoBehaviour
         {
             if(countInvoke >= boxFormation.countEnemy)
             {
-                GameManager.Instance.gamePlayManager.ChangeStateEndGame(LevelResult.Win);
+                GameManager.Instance.gamePlayManager.ChangeStateEndWave();
             }
         } else if (radialFormation != null)
         {
             if (countInvoke >= radialFormation.countEnemy)
             {
-                GameManager.Instance.gamePlayManager.ChangeStateEndGame(LevelResult.Win);
+                GameManager.Instance.gamePlayManager.ChangeStateEndWave();
             }
         }
         else if (asteroidSpawner != null)
         {
             if (countInvoke >= asteroidSpawner.countEnemy)
             {
-                GameManager.Instance.gamePlayManager.ChangeStateEndGame(LevelResult.Win);
+                GameManager.Instance.gamePlayManager.ChangeStateEndWave();
             }
         }
         else if (miniBoss != null)
