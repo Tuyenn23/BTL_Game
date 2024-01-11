@@ -84,6 +84,7 @@ MonoBehaviour:
   pos2: {fileID: 0}
   timeDelay: 3
   enemyBossType: 1
+  countEnemy: 1
 --- !u!1 &8059234274299008074
 GameObject:
   m_ObjectHideFlags: 0

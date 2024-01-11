@@ -114,7 +114,7 @@ MonoBehaviour:
   boxFormation: {fileID: 0}
   radialFormation: {fileID: 0}
   asteroidSpawner: {fileID: 0}
-  miniBoss: {fileID: 0}
+  miniBoss: {fileID: -7785908661045249967}
 --- !u!114 &-7785908661045249967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +134,4 @@ MonoBehaviour:
   pos2: {fileID: 7911316552314151686}
   timeDelay: 3
   enemyBossType: 0
+  countEnemy: 2
