@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ExampleArmy : MonoBehaviour {
+public class ExampleArmy : MonoBehaviour
+{
     public FormationBase _formation;
 
     public FormationBase Formation
@@ -18,7 +19,7 @@ public class ExampleArmy : MonoBehaviour {
 
     [SerializeField] private GameObject _unitPrefab;
     [SerializeField] private GameObject _unitPrefab1;
-    
+
     [SerializeField] private float _unitSpeed;
 
     public List<GameObject> _spawnedUnits = new List<GameObject>();
@@ -48,7 +49,8 @@ public class ExampleArmy : MonoBehaviour {
     {
         for (var i = 0; i < _spawnedUnits.Count; i++)
         {
-            _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, transform.position + _points[i], _unitSpeed * Time.deltaTime);
+            if (i < _points.Count)
+                _spawnedUnits[i].transform.position = Vector3.MoveTowards(_spawnedUnits[i].transform.position, transform.position + _points[i], _unitSpeed * Time.deltaTime);
         }
     }
 
@@ -75,10 +77,10 @@ public class ExampleArmy : MonoBehaviour {
             {
                 var unit = Instantiate(_unitPrefab, transform.position + pos, Quaternion.identity, _parent);
                 var unit1 = Instantiate(_unitPrefab1, transform.position + pos, Quaternion.identity, _parent);
-                
+
                 _spawnedUnits.Add(unit);
                 _spawnedUnits.Add(unit1);
-                
+
                 lastSpawnTime = Time.time;
             }
         }
